@@ -9,13 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.AccessoriesActivity"></activity>
+        <activity android:name=".details.ProductDetails" />
+        <activity android:name=".adapters.ProductAdapters" />
+        <activity android:name=".ProductImage" />
+        <activity android:name=".Productimg" />
+        <activity android:name=".GridView" />
+        <activity android:name=".Listimages" />
+        <activity android:name=".Take" />
+        <activity android:name=".Product" />
+        <activity android:name=".Patient" />
+        <activity android:name=".Second" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activities.ProductActivity" />
     </application>
 
 </manifest>

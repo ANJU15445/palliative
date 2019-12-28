@@ -9,13 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activities.ServiceActivity"></activity>
+        <activity android:name=".activities.FinalPaymentActivity" />
+        <activity android:name=".activities.TransactionActivity" />
+        <activity android:name=".models.Service" />
+        <activity android:name=".activities.PaymentActivity" />
+        <activity android:name=".activities.OnlinePaymentActivity" />
+        <activity android:name=".activities.VolunteersActivity" />
+        <activity android:name=".PATIENT" />
+        <activity android:name=".REGISTER" />
+        <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <Activity android:name=".SERVICE" />
     </application>
 
 </manifest>

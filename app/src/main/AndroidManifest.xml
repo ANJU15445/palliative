@@ -17,7 +17,7 @@
         <activity android:name=".activities.OnlinePaymentActivity" />
         <activity android:name=".activities.VolunteersActivity" />
         <activity android:name=".PATIENT" />
-        <activity android:name=".REGISTER" >
+        <activity android:name=".activities.REGISTER" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

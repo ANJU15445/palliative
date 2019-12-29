@@ -17,16 +17,19 @@
         <activity android:name=".activities.OnlinePaymentActivity" />
         <activity android:name=".activities.VolunteersActivity" />
         <activity android:name=".PATIENT" />
-        <activity android:name=".REGISTER" />
-        <activity android:name=".activities.MainActivity">
+        <activity android:name=".REGISTER" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity android:name=".activities.MainActivity">
+
         </activity>
 
-        <Activity android:name=".SERVICE" />
+        <activity android:name=".SERVICE" />
     </application>
 
 </manifest>

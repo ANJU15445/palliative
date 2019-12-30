@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.palliative">
 
     <application
@@ -8,10 +9,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".activities.AccessoriesActivity"></activity>
         <activity android:name=".details.ProductDetails" />
-        <activity android:name=".adapters.ProductAdapters" />
+
         <activity android:name=".ProductImage" />
         <activity android:name=".Productimg" />
         <activity android:name=".GridView" />
@@ -27,7 +29,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.ProductActivity" />
+
+        <activity android:name=".activities.ServiceActivity"></activity>
+        <activity android:name=".activities.FinalPaymentActivity" />
+        <activity android:name=".activities.TransactionActivity" />
+        <activity android:name=".models.Service" />
+        <activity android:name=".activities.PaymentActivity" />
+        <activity android:name=".activities.OnlinePaymentActivity" />
+        <activity android:name=".activities.VolunteersActivity" />
+        <activity android:name=".activities.REGISTER" />
+
+        <activity android:name=".SERVICE" />
+
     </application>
 
 </manifest>

@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Palliative</string>
+
     <string name="card_name">Name</string>
+    <string name="card_price">Price</string>
     <string name="card_contact">Contact</string>
 </resources>

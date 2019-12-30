@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Second">
+    tools:context=".VolunteerActivity">
 
     <TextView
         android:id="@+id/name"
@@ -91,7 +91,7 @@
 
 
     <EditText
-        android:id="@+id/one"
+        android:id="@+id/etVname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
@@ -104,7 +104,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/two"
+        android:id="@+id/etVaddresss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
@@ -113,61 +113,64 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/one" />
+        app:layout_constraintTop_toBottomOf="@+id/etVname" />
 
     <EditText
-        android:id="@+id/three"
+        android:id="@+id/etVage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:hint="enter your address"
+        android:hint="enter your age"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/two" />
+        app:layout_constraintTop_toBottomOf="@+id/etVaddresss" />
     <EditText
-        android:id="@+id/four"
+        android:id="@+id/etVphone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:hint="enter your address"
+        android:hint="enter your phone no."
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/three" />
+        app:layout_constraintTop_toBottomOf="@+id/etVage" />
 
     <EditText
-        android:id="@+id/five"
+        android:id="@+id/etVgender"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:hint="enter your address"
+        android:hint="enter your gender"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/four" />
+        app:layout_constraintTop_toBottomOf="@+id/etVphone" />
 
     <EditText
-        android:id="@+id/six"
+        android:id="@+id/etVoccupation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="44dp"
-        android:hint="enter your address"
+        android:hint="enter your occupation"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/five" />
+        app:layout_constraintTop_toBottomOf="@+id/etVgender" />
 
     <Button
+        android:id="@+id/btnvolunteer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="292dp"
-        tools:layout_editor_absoluteY="687dp"
-        android:text="Submit"/>
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etVoccupation" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

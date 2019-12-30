@@ -57,7 +57,7 @@ class AccessoriesAdapter (
             }
 
 
-            itemView.bgimg.setOnClickListener {
+            itemView.setOnClickListener {
 
                 currentAccessories?.let{
                     val message: String = currentAccessories!!.Name + currentAccessories!!
@@ -83,6 +83,7 @@ class AccessoriesAdapter (
 
 
             }
+            
 
             this.currentAccessories = accessories
         }

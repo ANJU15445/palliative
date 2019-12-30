@@ -3,56 +3,63 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.cardview.widget.CardView
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp">
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-            <ImageView
-                android:id="@+id/bgimg"
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="160dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/bgimg" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="12dp"
+                android:elevation="4dp" >
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="16dp">
-
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/bgimg" />
                 <TextView
                     android:id="@+id/txvName"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Name"
-                    android:textColor="#000"
-                    android:textSize="18sp" />
-                <TextView
-                    android:id="@+id/txvcontact"
-                    android:text="Contact"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:textColor="#555" />
+                    android:text="Name">
+                    </TextView>
 
-                <TextView
-                android:id="@+id/txvlocation"
-                android:text="Location"
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#555" />
+                android:layout_margin="12dp"
+                android:layout_weight="1"
+                android:elevation="4dp" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/kiwi" />
+            </androidx.cardview.widget.CardView>
 
 
 
-            </LinearLayout>
 
         </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
 
 </RelativeLayout>

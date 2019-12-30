@@ -11,9 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activities.AccessoriesActivity"></activity>
+        <activity android:name=".activities.OfficeActivity"></activity>
+        <activity android:name=".activities.AccessoriesActivity" />
         <activity android:name=".details.ProductDetails" />
-
         <activity android:name=".ProductImage" />
         <activity android:name=".Productimg" />
         <activity android:name=".GridView" />
@@ -21,7 +21,7 @@
         <activity android:name=".Take" />
         <activity android:name=".Product" />
         <activity android:name=".Patient" />
-        <activity android:name=".Second" />
+        <activity android:name=".VolunteerActivity" />
         <activity android:name=".activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,8 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".activities.ServiceActivity"></activity>
+        <activity android:name=".activities.ServiceActivity" />
         <activity android:name=".activities.FinalPaymentActivity" />
         <activity android:name=".activities.TransactionActivity" />
         <activity android:name=".models.Service" />
@@ -38,9 +37,7 @@
         <activity android:name=".activities.OnlinePaymentActivity" />
         <activity android:name=".activities.VolunteersActivity" />
         <activity android:name=".activities.REGISTER" />
-
         <activity android:name=".SERVICE" />
-
     </application>
 
 </manifest>
